@@ -2,46 +2,23 @@
 layout: default
 ---
 
-            <article class="full-article">
-                {% if page.image != null %}
-                <figure class="banner">
-                    <img src="{{ page.image }}" />
-                    <figcaption>Photo credit: {{ page.credit }}</figcaption>
-                </figure>
-                {% endif %}
-                <header>
-                    <h1 class="article-heading">{{page.title}}</h1>
-                </header>
-                <footer>{{ page.date | date: "%B %e, %Y" }}</footer>
-                {{ content }}
-                {% if page.comments %}
-                <section class="article-comments">
-                <h1>Comments</h1>
-                    <div id="disqus_thread"></div>
-                        <script type="text/javascript">
-                            var disqus_shortname = '{{ site.author.disqus }}';
-                            (function() {
-                                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                            })();
-                        </script>
-                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-                </section>
-                {% endif %}
-            </article>
-            <section>
-            	<ul class="article-nav">
-                    <li class="prev">
-                    {% if page.next.url %}
-                        <a href="{{page.next.url}}" title="Newer post: {{page.next.title | strip_html}}">&larr; {{page.next.title | strip_html}}</a>
-                    {% endif %}
-                    </li>
-                    <li class="next">
-                    {% if page.previous.url %}
-                        <a href="{{page.previous.url}}" title="Older post: {{page.previous.title | strip_html}}">{{page.previous.title | strip_html}} &rarr;</a>
-                    {% endif %}
-                    </li>
-            	</ul>
-            </section>
+	<article class="full-post">
+        <h1 class="full-title">{{ page.title }}</h1>
+            {{ content }}
+        <div class="social">
+            <div class="social-button">
+                <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+            </div>
+            <div class="social-button">
+                <div id="fb-root"></div>
+                <div class="fb-like" data-send="false" data-layout="button_count"
+                data-width="1" data-show-faces="false" data-action="like"></div>
+            </div>
+            <div class="social-button">
+                <g:plusone size="medium"></g:plusone>
+            </div>
+        </div>
+        <div class="disqus">
+            <div id="disqus_thread"></div>
+        </div>
+    </article>
