@@ -1,6 +1,6 @@
 auto: true
 permalink: /:title
-sitename: lechoo.github.io
+sitename: lechoo.github.com
 author :
  name: lechoo
  email: lechoo2u@gmail.com
