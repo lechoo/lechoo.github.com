@@ -4,6 +4,9 @@ layout: nil
 
 /*=== nDesign Version: 3.0 ===*/
 
+{% include normalize.css %}
+{% include pygments.css %}
+
 @font-face {
   font-family: 'fontello';
   src: url('../fonts/fontello.eot');
@@ -67,9 +70,3 @@ layout: nil
   font-variant: normal;
   text-transform: none;
 }
-
-
-
-
-{% include normalize.css %}
-{% include pygments.css %}
