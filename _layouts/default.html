@@ -1,42 +1,7 @@
 {% include head.html %}
 {%include _header.html %}
+<main role="main">		
+  {{ content }}
+</main>
+{% include _footer.html %}
 
-            <!-- main -->
-		    <main role="main">		
-                {{ content }}
-		    </main>
-            <!-- /main -->
-		
-            <!-- sidebar -->
-            <aside role="complementary">
-			    <h2>Sidebar</h2>
-		        <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis. Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit, rhoncus eu, luctus et interdum adipiscing wisi. Aliquam erat ac ipsum. 
-			    </p>
-	        </aside>
-            <!-- /sidebar -->
-			
-            <!-- footer -->
-            <footer role="contentinfo">
-                &copy; {{ '' | date: "%Y" }} lechoo.
-                Powered by <a href="//github.com/mojombo/jekyll">Jekyll</a>,
-                site source code hosted on <a href="//github.com/lechoo/lechoo.github.com">GitHub</a>.
-            </footer>
-            <!-- /footer -->			
-
-
-		
-        <!-- JS and analytics only. -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-		<script src="/js/scripts.js"></script>
-		
-		<script>
-        // Google Analytics
-        var _gaq=[['_setAccount','UA-20440416-10'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src='//www.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)})(document,'script');
-        </script>
-
-    </body>
-</html>
