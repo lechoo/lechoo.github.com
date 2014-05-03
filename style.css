@@ -94,4 +94,4 @@ body  {
     hyphens: auto;     
 }
 
-{% include pygments.css %}
+{% include syntax.css %}
