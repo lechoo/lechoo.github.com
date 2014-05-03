@@ -1,0 +1,21 @@
+    <header role="banner">
+      <div class="container">		
+        <a href="/" class="logo">
+          <img src="/" class="logo-img" alt="">
+				  <h1> {{ site.sitename }} </h1>
+        </a>
+        <nav role="navigation">
+          <ul>
+            <li {% if page.about %}class="current"{% endif %}>
+              <a href="{{ site.url }}/">Home</a>
+            </li>
+            <li {% if page.blog %}class="current"{% endif %}>
+              <a href="{{ site.url }}/blog/">Blog</a>
+            </li>
+            <li {% if page.projects %}class="current"{% endif %}>
+              <a href="{{ site.url }}/about/">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>			
+    </header>

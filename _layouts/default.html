@@ -1,32 +1,5 @@
 {% include head.html %}
-	
-    <body>
-	    <!-- container -->
-	    <div class="container">
-	        <!-- header -->
-            <header role="banner">
-		
-                <!-- logo -->
-                <div class="logo">
-                    <a href="/">
-                        <img src="/" class="logo-img" alt="">
-				        <h1> {{ site.sitename }} </h1>
-                    </a>
-                </div>
-                <!-- /logo -->
-			
-                <!-- nav -->
-                <nav role="navigation">
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-					    <li><a href="/archive">Archive</a></li>
-                    </ul>
-                </nav>
-                <!-- /nav -->
-			
-            </header>
-            <!-- /header -->
+{%include _header.html %}
 
             <!-- main -->
 		    <main role="main">		
@@ -50,8 +23,7 @@
             </footer>
             <!-- /footer -->			
 
-        </div>
-		<!-- /container -->
+
 		
         <!-- JS and analytics only. -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
